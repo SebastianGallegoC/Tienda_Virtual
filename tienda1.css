@@ -1,0 +1,18 @@
+*::after,
+*::before,
+*{  /* "*"se utiliza como selector universal */
+    margin: 0;  /* extension del margen*/
+    padding: 0; /*Anchura del margen*/
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0 auto; /*Centra el contenido*/
+    max-width: 1200px;
+    font-family: 'lato';
+    color: #333;
+}
+
+icono-carrito{
+
+}
