@@ -31,5 +31,37 @@ header{ /*afecta todo el contenido de la etiqueta header*/
 .contenedor-productos-tienda{
     display: grid; 
     grid-template-columns: repeat(3, 1fr); /*nos va a mostrar todos los productos organizados en columna*/
+    gap: 20 px; /*Separa los productos con espacios de 20 pixeles*/
 }
 
+.item{
+    border-radius: 10px; /*crea esquinas redondeadas en todos los productos*/
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20); /*Le da sombras a los productos cuando se pasa el mouse por encima*/
+}
+
+.item img{  /*Va a afectar las imagenes de los items*/
+    width: 100%; /*Le da altura del 100%, agarra todo el tamaño que deje el contenedor */
+    height: 300px; /*EStablece la altura de las imagenes*/
+    object-fit: cover; /*Adapta la imagen para que no pierda resolución*/
+    border-radius: 10px 10px 0 0; /*Bordes de 10px en las esquinas superior izquiera y derecha- no bordes en las esquinas inferiores izquierda y derecha*/
+    transition: all .5s; /*Hace que el zoom o agrandado de la imagen se haga en un lapso de 5segundos*/
+}
+
+.item figure{ /*afecta el contenedor figura*/
+    overflow: hidden; /*Hace que cuando la imagen se agrande, no se desborde del contenedor*/
+}
+
+.item:hover img{ /*Cada vez que pase el cursor por encima de las imagenes*/
+    transform: scale(1.2); /*Se va agrandar la imagen cada vez que el cursor pase encima de la imagen*/
+}
+
+.info-producto{
+    padding: 15px 30px; /*Genera un espacio de 15px por arriba y abajo- 30px por derecha y izquierda */
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+
+}
