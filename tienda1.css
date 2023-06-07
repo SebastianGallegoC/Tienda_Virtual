@@ -14,6 +14,22 @@ body{
 }
 
 .icono-carrito{ /*se usa un punto al inicio por que es una clase*/
-    width: 40px;
-    height: 40px;
+    width: 40px;  /*Se establece la anchura*/
+    height: 40px; /*Se establece la altura*/
 }
+
+img{ /*Afecta todas las imagenes de la pagina*/
+    max-width: 100%; /*Hace que las imagenes no se desborden o salgan de la pantalla horizontalmente*/
+}
+
+header{ /*afecta todo el contenido de la etiqueta header*/
+    display: flex; /*activa un sistema que nos ayuda acomodar textos,imagenes,etc.. como si fueran cajas*/
+    justify-content: space-between; /*genera un espacio entre el texto tienda y la imagen del carrito*/
+    padding: 30px 0 40px 0 ; /*genera un espacio de 30 pixeles por arriba y 40 px por abajo*/
+}
+
+.contenedor-productos-tienda{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /*nos va a mostrar todos los productos organizados en columna*/
+}
+
