@@ -3,16 +3,17 @@
 *{  /* "*"se utiliza como selector universal */
     margin: 0;  /* extension del margen*/
     padding: 0; /*Anchura del margen*/
-    box-sizing:border-box;
+    box-sizing: border-box; /*hace que el padding y el borde de la caja pasen a formar parte del ancho de la caja*/
 }
 
 body{
     margin: 0 auto; /*Centra el contenido*/
-    max-width: 1200px;
-    font-family: 'lato';
+    max-width: 1200px; /*establece el ancho del body a 1200px*/
+    font-family: 'lato'; /*define una familia de fuentes(tipografia)*/
     color: #333;
 }
 
-icono-carrito{
-
+.icono-carrito{ /*se usa un punto al inicio por que es una clase*/
+    width: 40px;
+    height: 40px;
 }
