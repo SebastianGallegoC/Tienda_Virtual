@@ -19,6 +19,11 @@ body{
     stroke: #000;
 }
 
+.icono-carrito:hover{
+    cursor: pointer ; /*Cambia el cursor cuando se pasa encima de la imagen del carrito*/
+    
+}
+
 img{ /*Afecta todas las imagenes de la pagina*/
     max-width: 100%; /*Hace que las imagenes no se desborden o salgan de la pantalla horizontalmente*/
 }
@@ -47,6 +52,10 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     border-radius: 50%; /*Le da borde redondeado al contador */
 }
 
+#contador-productos{
+    font-size: 12px;
+}
+
 .contenedor-carrito-productos{
     position: absolute;
     top: 50px;
@@ -54,12 +63,15 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     width: 400px;
     right: 0;
     z-index: 1; /*Le da un orden al contenido del contenedor*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20); /*Le da sombras cuando sale la informacion sobre del carrito*/
+    border-radius: 10px; /*Esquinas redondas a la informacion del carrito*/
 }
 
 .cart-product{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20); /*Crea una raya de division en el cuadro de informacion del carrito*/
 }
 
 .info-carrito-producto{
@@ -68,15 +80,53 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     flex: 0.8; /*Indica cual es la cantidad de espacio que va haber entre la informacion*/
 }
 
+.titulo-producto-carrito{ /*Va afectar los nombres de los productos cuando se abra la informacion del carrito*/
+    font-size: 20px; /*Afecta el tamaño de los caracteres*/
+}   
+
+.precio-producto-carrito{ /*Va afectar los precios de los productos cuando se abra la informacion del carrito*/
+    font-weight: 700; /*Afecta el grosor de los trazos de los caracteres*/
+    font-size: 20px;
+    margin-left: 10px; /*Establece un margen por el lado izquierdo*/
+}
+
+.cantidad-producto-carrito{ /*Va afectar la cantidad de los productos cuando se abra la informacion del carrito*/
+    font-weight: 400; /*Afecta el grosor de los trazos de los caracteres*/
+    font-size: 20px;
+}
+
 .icono-cerrar{
     width: 25px;
     height: 25px;
 }
 
+.icono-cerrar:hover{ 
+    stroke: red; /*Cuando el cursor este encima de la x, la x se va a volver roja*/
+    cursor: pointer; /*El cursor va a cambiar cuando este encima de la x*/
+}
+
+.costo-total{
+    display: flex;
+    justify-content: center; /*Centra el contenido del contenedor horizontalmente*/
+    align-items: center; /*Centra el contenido del contenedor verticalmente*/
+    padding: 20px 0; /*Aumenta el espacio entre el texto total y el precio total*/
+    gap: 20px; /*Separa los productos con espacios de 20 pixeles*/
+}
+
+.costo-total h3{ /*Afecta el h3 del contenedor costo-total*/
+    font-size: 20px; /*Cambia el tamaño de las letras*/
+    font-weight: 700; /*Cambia el grosor de las letras*/
+}
+
+.total-pagar{
+    font-size: 20px; /*Cambia el tamaño de las letras*/
+    font-weight: 900; /*Cambia el grosor de las letras*/
+}
+
 .contenedor-productos-tienda{
     display: grid; 
     grid-template-columns: repeat(3, 1fr); /*nos va a mostrar todos los productos organizados en columna*/
-    gap: 20 px; /*Separa los productos con espacios de 20 pixeles*/
+    gap: 20px; /*Separa los productos con espacios de 20 pixeles*/
 }
 
 .item{
