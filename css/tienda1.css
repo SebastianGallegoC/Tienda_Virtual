@@ -16,6 +16,7 @@ body{
 .icono-carrito{ /*se usa un punto al inicio por que es una clase*/
     width: 40px;  /*Se establece la anchura*/
     height: 40px; /*Se establece la altura*/
+    stroke: #000;
 }
 
 img{ /*Afecta todas las imagenes de la pagina*/
@@ -28,7 +29,49 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     padding: 30px 0 40px 0 ; /*genera un espacio de 30 pixeles por arriba y 40 px por abajo*/
 }
 
+.contenedor-imagen{ 
+    position: relative; /**/
+}
 
+.count-products{
+    position: absolute; /*centra horizontal y verticalmente la cantidad de productos que va a comprar*/
+    top: 55%; /*Cantidad de espacio que va a ocupar el número*/
+    right: 0; 
+    background-color: #000;  /*Color de fondo negro*/
+    color: #fff; /*Color numeros blanco*/
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center; /*Centra los números verticalmente*/
+    align-items: center; /*Centra el númer horizontalmente*/
+    border-radius: 50%; /*Le da borde redondeado al contador */
+}
+
+.contenedor-carrito-productos{
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    width: 400px;
+    right: 0;
+    z-index: 1; /*Le da un orden al contenido del contenedor*/
+}
+
+.cart-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.info-carrito-producto{
+    display: flex;
+    justify-content: space-between; /*Genera espacio entre la informacion del carrito*/
+    flex: 0.8; /*Indica cual es la cantidad de espacio que va haber entre la informacion*/
+}
+
+.icono-cerrar{
+    width: 25px;
+    height: 25px;
+}
 
 .contenedor-productos-tienda{
     display: grid; 
