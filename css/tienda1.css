@@ -28,6 +28,8 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     padding: 30px 0 40px 0 ; /*genera un espacio de 30 pixeles por arriba y 40 px por abajo*/
 }
 
+
+
 .contenedor-productos-tienda{
     display: grid; 
     grid-template-columns: repeat(3, 1fr); /*nos va a mostrar todos los productos organizados en columna*/
@@ -60,8 +62,22 @@ header{ /*afecta todo el contenido de la etiqueta header*/
 
 .info-producto{
     padding: 15px 30px; /*Genera un espacio de 15px por arriba y abajo- 30px por derecha y izquierda */
-    line-height: 2;
+    line-height: 2; /*da un interlineado de 2 espacios entre el nombre del producto y su precio*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*hace que el nombre, precio y boton se organizen en columna*/
+    gap: 10px; /*da un espacio de 10px entre los cuadros*/
+}
 
+.precio{
+    font-size: 18px; /*Cambia el tamaño de las letras*/
+    font-weight: 900; /*Cambia el grosor de las letras*/
+}
+
+.info-product button{ /*Va afectar a los botones de añadir al carrito*/
+    border: none; /*Quita el borde negro de los botones*/
+    background: none; /*quita el fondo*/
+    background-color: #000; /*Cambia el color de fondo a negro*/
+    color: #fff; /*Color de letras a blanco*/
+    padding: 15px 10px; /*Cambia la anchura del boton*/
+    cursor: pointer; /*El cursor cambia cuando este encima del boton*/
 }
