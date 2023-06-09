@@ -21,7 +21,7 @@ body{
 
 .icono-carrito:hover{
     cursor: pointer ; /*Cambia el cursor cuando se pasa encima de la imagen del carrito*/
-    
+
 }
 
 img{ /*Afecta todas las imagenes de la pagina*/
@@ -69,6 +69,7 @@ header{ /*afecta todo el contenido de la etiqueta header*/
 
 .cart-product{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20); /*Crea una raya de division en el cuadro de informacion del carrito*/
@@ -121,6 +122,10 @@ header{ /*afecta todo el contenido de la etiqueta header*/
 .total-pagar{
     font-size: 20px; /*Cambia el tamaño de las letras*/
     font-weight: 900; /*Cambia el grosor de las letras*/
+}
+
+.hidden-cart{
+    display: none;
 }
 
 .contenedor-productos-tienda{

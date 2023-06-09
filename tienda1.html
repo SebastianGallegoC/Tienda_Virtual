@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en"> <!--Especifica el idioma de la pagina-->
-<head>
-    <title>Tienda Online</title>
-    <link rel="stylesheet" href="css/tienda1.css"> <!--llama el archivo css-->
-    <meta charset="UTF-8"> <!--llama a conjunto de caracteres universal-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Compatibilidad del navegador-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ajusta el zoom para que coincida con el ancho de la pantalla-->
-</head>
-<body>
-    <header>
-        <h1>TIENDA ONLINE</h1>
-        <div class="contenedor-imagen">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-carrito">  <!--SVG Copiado de heroicons-->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-            </svg>     
-            <div class="count-products">
-                <span id="contador-productos">0</span>
-            </div> 
-            <div class="contenedor-carrito-productos hidden-cart">
-                <div class="cart-product">
-                    <div class="info-carrito-producto">
-                        <span class="cantidad-producto-carrito">1</span>
-                        <p class="titulo-producto-carrito">Camisa Nike</p>
-                        <span class="precio-producto-carrito">$180.000</span>
+    <head>
+        <title>Tienda Online</title>
+        <link rel="stylesheet" href="css/tienda1.css"> <!--llama el archivo css-->
+        <meta charset="UTF-8"> <!--llama a conjunto de caracteres universal-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Compatibilidad del navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ajusta el zoom para que coincida con el ancho de la pantalla-->
+    </head>
+    <body>
+        <header>
+            <h1>TIENDA ONLINE</h1>
+            <div class="contenedor-imagen">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-carrito">  <!--SVG Copiado de heroicons-->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>     
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div> 
+                <div class="contenedor-carrito-productos hidden-cart">
+                    <button>
+                    <div class="cart-product">
+                        <div class="info-carrito-producto">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Camisa Nike</p>
+                            <span class="precio-producto-carrito">$180.000</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-cerrar">  <!--SVG Copiado de heroicons x-->
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>                      
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-cerrar">  <!--SVG Copiado de heroicons x-->
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>                      
+                    <div class="costo-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$180</span>
+                    </div>
+                    </button>
+                </div>      
+            </div>
+        </header>
+        <div class="contenedor-productos-tienda">
+            <div class="item">
+                <figure>
+                    <img src="https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Nike-Essential-camiseta-negra-_329801-front-US.jpg" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                </figure>
+                <div class="info-producto">
+                    <h2>Camisa Nike</h2>
+                    <p class="precio">$180.000 COP</p>
+                    <button>Añadir al carrito</button>
                 </div>
-                <div class="costo-total">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">$180</span>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="https://peopleplays.vteximg.com.br/arquivos/ids/380357-520-520/HQ8809_1.jpg?v=638072233044730000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                </figure>
+                <div class="info-producto">
+                    <h2>Tenis Adidas</h2>
+                    <p class="precio">$350.000 COP</p>
+                    <button>Añadir al carrito</button>
                 </div>
-            </div>      
-        </div>
-    </header>
-    <div class="contenedor-productos-tienda">
-        <div class="item">
-            <figure>
-                <img src="https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Nike-Essential-camiseta-negra-_329801-front-US.jpg" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-            </figure>
-            <div class="info-producto">
-                <h2>Camisa Nike</h2>
-                <p class="precio">$180.000 COP</p>
-                <button>Añadir al carrito</button>
             </div>
-        </div>
 
-        <div class="item">
-            <figure>
-                <img src="https://peopleplays.vteximg.com.br/arquivos/ids/380357-520-520/HQ8809_1.jpg?v=638072233044730000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-            </figure>
-            <div class="info-producto">
-                <h2>Tenis Adidas</h2>
-                <p class="precio">$350.000 COP</p>
-                <button>Añadir al carrito</button>
+            <div class="item">
+                <figure>
+                    <img src="https://arturocalle.vtexassets.com/arquivos/ids/521385/HOMBRE-CAMISA-10122390-GRIS-030_1.jpg?v=638085363637200000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                </figure>
+                <div class="info-producto">
+                    <h2>Camisa Manga Larga A.C.</h2>
+                    <p class="precio">$115.000 COP</p>
+                    <button>Añadir al carrito</button>
+                </div>
             </div>
-        </div>
 
-        <div class="item">
-            <figure>
-                <img src="https://arturocalle.vtexassets.com/arquivos/ids/521385/HOMBRE-CAMISA-10122390-GRIS-030_1.jpg?v=638085363637200000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-            </figure>
-            <div class="info-producto">
-                <h2>Camisa Manga Larga A.C.</h2>
-                <p class="precio">$115.000 COP</p>
-                <button>Añadir al carrito</button>
+            <div class="item">
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0645/3618/2999/products/LUCINO.jpg?v=1677771369" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                </figure>
+                <div class="info-producto">
+                    <h2>Short Jean Monastery</h2>
+                    <p class="precio">$220.000 COP</p>
+                    <button>Añadir al carrito</button>
+                </div>
             </div>
-        </div>
 
-        <div class="item">
-            <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0645/3618/2999/products/LUCINO.jpg?v=1677771369" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-            </figure>
-            <div class="info-producto">
-                <h2>Short Jean Monastery</h2>
-                <p class="precio">$220.000 COP</p>
-                <button>Añadir al carrito</button>
+            <div class="item">
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0606/4970/1633/products/CAMISETAHOMBREMONASTERYSINAIROJA1.jpg?v=1676060499" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                </figure>
+                <div class="info-producto">
+                    <h2>Camisa Monastery</h2>
+                    <p class="precio">$210.000 COP</p>
+                    <button>Añadir al carrito</button>
+                </div>
             </div>
         </div>
-
-        <div class="item">
-            <figure>
-                <img src="https://cdn.shopify.com/s/files/1/0606/4970/1633/products/CAMISETAHOMBREMONASTERYSINAIROJA1.jpg?v=1676060499" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-            </figure>
-            <div class="info-producto">
-                <h2>Camisa Monastery</h2>
-                <p class="precio">$210.000 COP</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-    </div>
-</body>
+        <script src="tienda1.js"></script> <!--Se llama el codigo de java script-->
+    </body>
 </html>
