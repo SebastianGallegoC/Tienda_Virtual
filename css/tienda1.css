@@ -6,6 +6,22 @@
     box-sizing: border-box; /*hace que el padding y el borde de la caja pasen a formar parte del ancho de la caja*/
 }
 
+
+.contenedor-cliente{
+    order: -1; /*Establece el orden en el que los items del contenedor apareceran*/
+    width: 25%; /*Hace que en anchura ocupe mas espacio*/
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    display: flex;
+    margin-right: 200px;
+    justify-content: center;
+}
+
 body{
     margin: 0 auto; /*Centra el contenido*/
     max-width: 1200px; /*establece el ancho del body a 1200px*/
@@ -21,7 +37,42 @@ body{
 
 .icono-carrito:hover{
     cursor: pointer ; /*Cambia el cursor cuando se pasa encima de la imagen del carrito*/
+}
 
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.contenedor-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item{
+    margin-right: 50px;
+}
+
+#menu-nav{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
+
+}
+
+.menu{
+    position: static;
+    display: flex;
+    background: none;
+    position: absolute;
+    justify-content: space-between;
+    justify-content: center;
 }
 
 img{ /*Afecta todas las imagenes de la pagina*/
@@ -32,6 +83,7 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     display: flex; /*activa un sistema que nos ayuda acomodar textos,imagenes,etc.. como si fueran cajas*/
     justify-content: space-between; /*genera un espacio entre el texto tienda y la imagen del carrito*/
     padding: 30px 0 40px 0 ; /*genera un espacio de 30 pixeles por arriba y 40 px por abajo*/
+    justify-content: center; /*Centra el Contenido de header*/
 }
 
 .contenedor-imagen{ 
@@ -126,6 +178,13 @@ header{ /*afecta todo el contenido de la etiqueta header*/
 
 .hidden-cart{
     display: none;
+}
+
+.buscador-productos{
+    display: block;
+    padding: 10px;
+    width: 150px;
+    margin-bottom: 15px;
 }
 
 .contenedor-productos-tienda{

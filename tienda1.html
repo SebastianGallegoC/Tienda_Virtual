@@ -9,7 +9,13 @@
     </head>
     <body>
         <header>
-            <h1>TIENDA ONLINE</h1>
+            <div class="contenedor-cliente">
+                <span class="text-contenedor-cliente">NECESITAS AYUDA</span>
+                <p class="text-contenedor-cliente">
+                    <p>Llama al +57 317 5121665</p>
+                </p>
+            </div>
+            <h1>CLOTHES SHOP</h1>
             <div class="contenedor-imagen">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-carrito">  <!--SVG Copiado de heroicons-->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
@@ -37,7 +43,28 @@
                 </div>      
             </div>
         </header>
-        <input type="search" class="main-header__input" placeholder="Buscar productos"> <!--Buscador de porductos-->
+        <div class="contenedor-menu">
+            <nav class="menu-enlaces" id="menu-nav"> <!--Nos deja colocar links invisibles-->
+                <ul class="menu"> <!--Nos permite crear lista-->
+                    <li class="menu-item"> <!--EL li declara los elementos de la lista-->
+                        <a href="menu-link">HOME</a> <!--a nos deja crear enlaces a otras paginas de internet-->
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="menu-link">ACERCA DE</a>
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="menu-link">CARACTERISTICAS</a>
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="menu-link">TIENDA</a>
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="menu-link">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <input type="search" class="buscador-productos" placeholder="Buscar productos"> <!--Buscador de porductos-->
         <div class="contenedor-productos-tienda">
             <div class="item">
                 <figure>
@@ -49,7 +76,6 @@
                     <button>Añadir al carrito</button>
                 </div>
             </div>
-
             <div class="item">
                 <figure>
                     <img src="https://peopleplays.vteximg.com.br/arquivos/ids/380357-520-520/HQ8809_1.jpg?v=638072233044730000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
