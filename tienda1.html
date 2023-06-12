@@ -15,7 +15,7 @@
                     <p>Llama al +57 317 5121665</p>
                 </p>
             </div>
-            <h1>CLOTHES SHOP</h1>
+            <h1 class="titulo-global">CLOTHES SHOP</h1>
             <div class="contenedor-imagen">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icono-carrito">  <!--SVG Copiado de heroicons-->
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
@@ -43,83 +43,121 @@
                 </div>      
             </div>
         </header>
-        <div class="contenedor-menu">
-            <nav class="menu-enlaces" id="menu-nav"> <!--Nos deja colocar links invisibles-->
-                <ul class="menu"> <!--Nos permite crear lista-->
-                    <li class="menu-item"> <!--EL li declara los elementos de la lista-->
-                        <a href="menu-link">HOME</a> <!--a nos deja crear enlaces a otras paginas de internet-->
-                    </li>
-                    <li class="menu-item"> 
-                        <a href="menu-link">ACERCA DE</a>
-                    </li>
-                    <li class="menu-item"> 
-                        <a href="menu-link">CARACTERISTICAS</a>
-                    </li>
-                    <li class="menu-item"> 
-                        <a href="menu-link">TIENDA</a>
-                    </li>
-                    <li class="menu-item"> 
-                        <a href="menu-link">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="buscador">
+            <div class="container">
+                <div class="cll">
+                    <div class="contenedor-menu">
+                        <nav class="menu-enlaces" id="menu-nav"> <!--Nos deja colocar links invisibles-->
+                            <ul class="menu"> <!--Nos permite crear lista-->
+                                <li class="menu-item"> <!--EL li declara los elementos de la lista-->
+                                    <a href="menu-link">HOME</a> <!--a nos deja crear enlaces a otras paginas de internet-->
+                                </li>
+                                <li class="menu-item"> 
+                                    <a href="menu-link" class="links">ACERCA DE</a>
+                                </li>
+                                <li class="menu-item"> 
+                                    <a href="menu-link">CARACTERISTICAS</a>
+                                </li>
+                                <li class="menu-item"> 
+                                    <a href="menu-link">TIENDA</a>
+                                </li>
+                                <li class="menu-item"> 
+                                    <a href="menu-link">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </nav>   
+                    </div>
+                    <input type="search" class="buscador-productos" placeholder="Buscar productos"> <!--Buscador de porductos-->
+                </div>
+            </div>
         </div>
-        <input type="search" class="buscador-productos" placeholder="Buscar productos"> <!--Buscador de porductos-->
-        <div class="contenedor-productos-tienda">
-            <div class="item">
-                <figure>
-                    <img src="https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Nike-Essential-camiseta-negra-_329801-front-US.jpg" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-                </figure>
-                <div class="info-producto">
-                    <h2>Camisa Nike</h2>
-                    <p class="precio">$180.000 COP</p>
-                    <button>Añadir al carrito</button>
+        <div class="contenedordeproductos">
+            <div class="contenedor-productos-tienda">
+                <div class="item">
+                    <figure>
+                        <img src="https://scene7.zumiez.com/is/image/zumiez/product_main_medium_2x/Nike-Essential-camiseta-negra-_329801-front-US.jpg" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                    </figure>
+                    <div class="info-producto">
+                        <h2>Camisa Nike</h2>
+                        <p class="precio">$180.000 COP</p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <figure>
-                    <img src="https://peopleplays.vteximg.com.br/arquivos/ids/380357-520-520/HQ8809_1.jpg?v=638072233044730000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-                </figure>
-                <div class="info-producto">
-                    <h2>Tenis Adidas</h2>
-                    <p class="precio">$350.000 COP</p>
-                    <button>Añadir al carrito</button>
+                <div class="item">
+                    <figure>
+                        <img src="https://peopleplays.vteximg.com.br/arquivos/ids/380357-520-520/HQ8809_1.jpg?v=638072233044730000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                    </figure>
+                    <div class="info-producto">
+                        <h2>Tenis Adidas</h2>
+                        <p class="precio">$350.000 COP</p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <figure>
-                    <img src="https://arturocalle.vtexassets.com/arquivos/ids/521385/HOMBRE-CAMISA-10122390-GRIS-030_1.jpg?v=638085363637200000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-                </figure>
-                <div class="info-producto">
-                    <h2>Camisa Manga Larga A.C.</h2>
-                    <p class="precio">$115.000 COP</p>
-                    <button>Añadir al carrito</button>
+    
+                <div class="item">
+                    <figure>
+                        <img src="https://arturocalle.vtexassets.com/arquivos/ids/521385/HOMBRE-CAMISA-10122390-GRIS-030_1.jpg?v=638085363637200000" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                    </figure>
+                    <div class="info-producto">
+                        <h2>Camisa Manga Larga A.C.</h2>
+                        <p class="precio">$115.000 COP</p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <figure>
-                    <img src="https://cdn.shopify.com/s/files/1/0645/3618/2999/products/LUCINO.jpg?v=1677771369" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-                </figure>
-                <div class="info-producto">
-                    <h2>Short Jean Monastery</h2>
-                    <p class="precio">$220.000 COP</p>
-                    <button>Añadir al carrito</button>
+    
+                <div class="item">
+                    <figure>
+                        <img src="https://cdn.shopify.com/s/files/1/0645/3618/2999/products/LUCINO.jpg?v=1677771369" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                    </figure>
+                    <div class="info-producto">
+                        <h2>Short Jean Monastery</h2>
+                        <p class="precio">$220.000 COP</p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <figure>
-                    <img src="https://cdn.shopify.com/s/files/1/0606/4970/1633/products/CAMISETAHOMBREMONASTERYSINAIROJA1.jpg?v=1676060499" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
-                </figure>
-                <div class="info-producto">
-                    <h2>Camisa Monastery</h2>
-                    <p class="precio">$210.000 COP</p>
-                    <button>Añadir al carrito</button>
+    
+                <div class="item">
+                    <figure>
+                        <img src="https://cdn.shopify.com/s/files/1/0606/4970/1633/products/CAMISETAHOMBREMONASTERYSINAIROJA1.jpg?v=1676060499" alt="producto"><!--src=Link imagen del producto. alt=ayuda al motor a clasificar y encontrar mas facil -->
+                    </figure>
+                    <div class="info-producto">
+                        <h2>Camisa Monastery</h2>
+                        <p class="precio">$210.000 COP</p>
+                        <button>Añadir al carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="tienda1.js"></script> <!--Se llama el codigo de java script-->
+        <footer class="footer">
+            <div class="container">
+                <div class="seccion-inferior">
+                    <div class="footers">
+                        <h2 class="footer-titulo">Sobre nosotros</h2>
+                        <p class="footer-texto">Somos una empresa colombia, llevamos 5 años vendiendo ropa con esmero y pasión</p>
+                    </div>
+                    <div class="footers">
+                        <h2 class="footer-titulo">Ubicación:</h2>
+                        <p class="footer-texto">AVENIDA 4 #15-14, CUCUTA, Norte de Santander</p>
+                        <h2 class="footer-titulo">Contacto</h2>
+                        <p class="footer-texto">Phone: +57 317 5121665</p>
+                        <p class="footer-texto">Email: est_js_gallego@fesc.edu.co</p>
+                    </div>
+                    <div class="footers">
+                        <h2 class="footer-titulo">Enlaces</h2>
+                        <a href class="footer-link">HOME</a>
+                        <a href class="footer-link">ACERCA DE</a>
+                        <a href class="footer-link">ERROR</a>
+                        <a href class="footer-link">TIENDA</a>
+                        <a href class="footer-link">NUESTRO CONTACTO</a>
+                    </div>
+                    <div class="footers">
+                        <h2 class="footer-titulo">Regístrese para recibir ofertas</h2>
+                        <p class="footer-texto">Si te registras, recibirás las últimas noticias y actualizaciones sobre nosotros.</p>
+                        <input type="email" class="footer-input" plaholder="Ingresa tu email">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -6,7 +6,6 @@
     box-sizing: border-box; /*hace que el padding y el borde de la caja pasen a formar parte del ancho de la caja*/
 }
 
-
 .contenedor-cliente{
     order: -1; /*Establece el orden en el que los items del contenedor apareceran*/
     width: 25%; /*Hace que en anchura ocupe mas espacio*/
@@ -20,13 +19,13 @@ h1{
     display: flex;
     margin-right: 200px;
     justify-content: center;
+    border-bottom: 1px solid #ccc;
 }
 
 body{
-    margin: 0 auto; /*Centra el contenido*/
-    max-width: 1200px; /*establece el ancho del body a 1200px*/
-    font-family: 'lato'; /*define una familia de fuentes(tipografia)*/
+    display: block;
     color: #333;
+    font-family: "Inconsolata";/*define una familia de fuentes(tipografia)*/
 }
 
 .icono-carrito{ /*se usa un punto al inicio por que es una clase*/
@@ -39,19 +38,15 @@ body{
     cursor: pointer ; /*Cambia el cursor cuando se pasa encima de la imagen del carrito*/
 }
 
-ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
 
 .contenedor-menu{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.menu-link{
+    color: black;
 }
 
 .menu-item{
@@ -59,20 +54,15 @@ ul{
 }
 
 #menu-nav{
-    opacity: 0;
-    visibility: hidden;
     transition: all 0.5s;
-    z-index: 999999;
-
 }
 
 .menu{
-    position: static;
     display: flex;
     background: none;
-    position: absolute;
     justify-content: space-between;
     justify-content: center;
+    list-style: none;
 }
 
 img{ /*Afecta todas las imagenes de la pagina*/
@@ -153,6 +143,12 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     height: 25px;
 }
 
+.contenedordeproductos{
+    display: block;
+    margin: 0 auto;
+    width: 1024px;
+}
+
 .icono-cerrar:hover{ 
     stroke: red; /*Cuando el cursor este encima de la x, la x se va a volver roja*/
     cursor: pointer; /*El cursor va a cambiar cuando este encima de la x*/
@@ -184,7 +180,19 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     display: block;
     padding: 10px;
     width: 150px;
-    margin-bottom: 15px;
+}
+
+.cll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .contenedor-productos-tienda{
@@ -237,4 +245,73 @@ header{ /*afecta todo el contenido de la etiqueta header*/
     color: #fff; /*Color de letras a blanco*/
     padding: 15px 10px; /*Cambia la anchura del boton*/
     cursor: pointer; /*El cursor cambia cuando este encima del boton*/
+}
+
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container{
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.footer{
+    background: #151515;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.seccion-inferior{
+    display: flex;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+div{
+    display: block; /*Separa elementos y no deja que los otros elementos los mueva*/
+}
+.footer-titulo{
+    border-bottom: 1px dotted #555; /*hace 1 linea delgadas entre los divs*/
+    padding-bottom: 20px; /*Da un espacio de 20px entre los botones*/
+}
+.footer-texto{
+    box-sizing: border-box; /*Hacec que el padding y el broder formen parte del ancho de la caja*/
+}
+
+.footer-link{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.footer-input{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555;
+    color: white;
+}
+
+.footers{
+    margin: 0 40px;
 }
